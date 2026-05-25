@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hongle Yu</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,57 +14,71 @@
       line-height: 1.8;
       color: #222;
     }
+
     h1 {
       font-size: 48px;
       margin-bottom: 10px;
     }
+
     h2 {
       margin-top: 40px;
       color: #333;
     }
+
     p {
       font-size: 17px;
     }
+
     ul {
       padding-left: 20px;
     }
+
     li {
       margin-bottom: 10px;
     }
+
     a {
       text-decoration: none;
       color: #0366d6;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .entry {
       margin-bottom: 24px;
     }
+
     .entry-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
     }
+
     .entry-title {
       font-weight: bold;
       font-size: 17px;
     }
+
     .entry-date {
       font-size: 15px;
       color: #666;
       white-space: nowrap;
       margin-left: 20px;
     }
+
     .entry-sub {
       color: #555;
       font-size: 16px;
       margin-bottom: 4px;
     }
+
     .entry-meta {
       font-size: 15px;
       color: #666;
     }
+
     .goal {
       margin-top: 40px;
       font-size: 15px;
@@ -71,8 +86,15 @@
       border-top: 1px solid #eee;
       padding-top: 20px;
     }
+
+    .project-desc {
+      margin-top: 10px;
+      color: #444;
+      font-size: 16px;
+    }
   </style>
 </head>
+
 <body>
 
   <h1>Hongle Yu</h1>
@@ -106,13 +128,59 @@
   </div>
 
   <h2>Projects</h2>
-  <ul>
-    <li>
-      <a href="https://github.com/BROOKSHEAR/Logistics_Delay_Project" target="_blank">
-        Logistics Data Mining with Machine Learning
-      </a>
-    </li>
-  </ul>
+
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-title">
+        <a href="https://github.com/BROOKSHEAR/Logistics_Delay_Project" target="_blank">
+          Logistics Delay Prediction with Machine Learning
+        </a>
+      </span>
+      <span class="entry-date">2025</span>
+    </div>
+
+    <div class="project-desc">
+      Developed a truck delivery delay prediction system using ensemble machine learning methods
+      including Logistic Regression, Random Forest, XGBoost, LightGBM, and CatBoost.
+    </div>
+
+    <ul>
+      <li>
+        Built a complete machine learning pipeline for logistics delay prediction using Python,
+        scikit-learn, XGBoost, LightGBM, CatBoost, and Optuna.
+      </li>
+
+      <li>
+        Designed a temporal cross-validation framework with TimeSeriesSplit to prevent temporal leakage
+        and improve real-world evaluation reliability.
+      </li>
+
+      <li>
+        Implemented two-stage hyperparameter tuning using RandomizedSearchCV, GridSearchCV,
+        and Optuna TPE optimization with pruning strategies.
+      </li>
+
+      <li>
+        Conducted SHAP-based model interpretation and feature ablation analysis to evaluate
+        feature importance and model explainability.
+      </li>
+
+      <li>
+        Engineered logistics features including transportation distance, vehicle type,
+        origin/destination regions, delivery windows, and temporal variables.
+      </li>
+
+      <li>
+        Structured the project using modular Python packages covering data cleaning,
+        feature engineering, model training, evaluation, tuning, and explainability analysis.
+      </li>
+
+      <li>
+        Achieved reproducible experimentation through configurable pipelines,
+        bootstrap confidence intervals, and automated analysis workflows.
+      </li>
+    </ul>
+  </div>
 
   <h2>Activities</h2>
 
@@ -121,9 +189,18 @@
       <span class="entry-title">Logistics Solution Design — Course Project</span>
       <span class="entry-date">2025</span>
     </div>
+
     <ul>
-      <li>Modelled and solved a Travelling Salesman Problem (TSP) using Gurobi and OR-Tools.</li>
-      <li>Solved a facility location problem across five regions (Northwest, Southwest, Central, North, and South China) and formulated a production scheduling model using PuLP in Python.</li>
+      <li>
+        Modelled and solved a Travelling Salesman Problem (TSP)
+        using Gurobi and OR-Tools.
+      </li>
+
+      <li>
+        Solved a facility location problem across five regions
+        (Northwest, Southwest, Central, North, and South China)
+        and formulated a production scheduling model using PuLP in Python.
+      </li>
     </ul>
   </div>
 
@@ -132,10 +209,21 @@
       <span class="entry-title">Supply Chain Modeling Competition</span>
       <span class="entry-date">2024</span>
     </div>
-    <div class="entry-sub">Group Leader — Third Prize (University Level)</div>
+
+    <div class="entry-sub">
+      Group Leader — Third Prize (University Level)
+    </div>
+
     <ul>
-      <li>Formulated and solved a production scheduling problem for an MRI equipment manufacturer using Excel Solver.</li>
-      <li>Modelled a transportation problem using linear programming in Excel Solver.</li>
+      <li>
+        Formulated and solved a production scheduling problem
+        for an MRI equipment manufacturer using Excel Solver.
+      </li>
+
+      <li>
+        Modelled a transportation problem using linear programming
+        in Excel Solver.
+      </li>
     </ul>
   </div>
 
@@ -146,18 +234,58 @@
       <span class="entry-title">KOSTAL — Shanghai</span>
       <span class="entry-date">Summers, 2023 – 2025</span>
     </div>
-    <div class="entry-sub">Intern, Production Planning & Warehouse Operations</div>
+
+    <div class="entry-sub">
+      Intern, Production Planning & Warehouse Operations
+    </div>
+
     <ul>
-      <li>Adjusted daily and weekly production plans in response to real-time line status, material supply fluctuations, and urgent order insertions.</li>
-      <li>Applied ABC classification to categorise inventory and prioritise resource allocation toward high-value items.</li>
-      <li>Gained hands-on experience with WMS in daily warehouse operations.</li>
-      <li>Coordinated with suppliers and cross-functional teams to support stable material supply.</li>
+      <li>
+        Adjusted daily and weekly production plans in response to
+        real-time line status, material supply fluctuations,
+        and urgent order insertions.
+      </li>
+
+      <li>
+        Applied ABC classification to categorise inventory
+        and prioritise resource allocation toward high-value items.
+      </li>
+
+      <li>
+        Gained hands-on experience with WMS in daily warehouse operations.
+      </li>
+
+      <li>
+        Coordinated with suppliers and cross-functional teams
+        to support stable material supply.
+      </li>
     </ul>
   </div>
 
   <h2>Skills</h2>
+
   <ul>
-    <li>English — IELTS 7.0 (Listening 6.5, Reading 8.0, Writing 6.5, Speaking 7.0)</li>
+    <li>
+      Python — pandas, scikit-learn, XGBoost, LightGBM, CatBoost,
+      Optuna, SHAP
+    </li>
+
+    <li>
+      Operations Research — Gurobi, OR-Tools, PuLP, Linear Programming
+    </li>
+
+    <li>
+      Data Analysis & Visualisation — NumPy, Matplotlib, Jupyter Notebook
+    </li>
+
+    <li>
+      Supply Chain Systems — WMS, Production Planning, Inventory Analysis
+    </li>
+
+    <li>
+      English — IELTS 7.0
+      (Listening 6.5, Reading 8.0, Writing 6.5, Speaking 7.0)
+    </li>
   </ul>
 
   <div class="goal">
@@ -165,9 +293,19 @@
   </div>
 
   <h2>Links</h2>
+
   <ul>
-    <li><a href="https://github.com/BROOKSHEAR" target="_blank">GitHub</a></li>
-    <li><a href="mailto:huuuyu37@gmail.com">Email</a></li>
+    <li>
+      <a href="https://github.com/BROOKSHEAR" target="_blank">
+        GitHub
+      </a>
+    </li>
+
+    <li>
+      <a href="mailto:huuuyu37@gmail.com">
+        Email
+      </a>
+    </li>
   </ul>
 
 </body>
