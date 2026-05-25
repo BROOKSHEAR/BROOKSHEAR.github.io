@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hongle Yu</title>
 
   <style>
@@ -61,6 +61,14 @@
       font-size: 17px;
     }
 
+    .entry-title a {
+      color: inherit;
+    }
+
+    .entry-title a:hover {
+      color: #0366d6;
+    }
+
     .entry-date {
       font-size: 15px;
       color: #666;
@@ -79,18 +87,19 @@
       color: #666;
     }
 
+    .project-desc {
+      margin-top: 10px;
+      color: #444;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
     .goal {
       margin-top: 40px;
       font-size: 15px;
       color: #888;
       border-top: 1px solid #eee;
       padding-top: 20px;
-    }
-
-    .project-desc {
-      margin-top: 10px;
-      color: #444;
-      font-size: 16px;
     }
   </style>
 </head>
@@ -100,6 +109,7 @@
   <h1>Hongle Yu</h1>
 
   <h2>About</h2>
+
   <p>
     Interested in Machine Learning, Complex Logistics Systems Optimization,
     Transportation Systems, and Supply Chain Engineering.
@@ -109,20 +119,38 @@
 
   <div class="entry">
     <div class="entry-header">
-      <span class="entry-title">Eindhoven University of Technology (TU/e)</span>
-      <span class="entry-date">Incoming 2026</span>
+      <span class="entry-title">
+        Eindhoven University of Technology (TU/e)
+      </span>
+
+      <span class="entry-date">
+        Incoming 2026
+      </span>
     </div>
-    <div class="entry-sub">MSc Analytics for Transport and Mobility</div>
+
+    <div class="entry-sub">
+      MSc Analytics for Transport and Mobility
+    </div>
   </div>
 
   <div class="entry">
     <div class="entry-header">
-      <span class="entry-title">Wuhan University of Technology (WUT)</span>
-      <span class="entry-date">2022 – 2026</span>
+      <span class="entry-title">
+        Wuhan University of Technology (WUT)
+      </span>
+
+      <span class="entry-date">
+        2022 – 2026
+      </span>
     </div>
-    <div class="entry-sub">BSc Logistics Management: Intelligent Logistics</div>
+
+    <div class="entry-sub">
+      BSc Logistics Management: Intelligent Logistics
+    </div>
+
     <div class="entry-meta">
-      GPA: 3.387 &nbsp;·&nbsp; Rank: 7 / 71 &nbsp;·&nbsp;
+      GPA: 3.387 &nbsp;·&nbsp;
+      Rank: 7 / 71 &nbsp;·&nbsp;
       Third-Class Scholarship 2024, 2025
     </div>
   </div>
@@ -136,58 +164,33 @@
           Logistics Delay Prediction with Machine Learning
         </a>
       </span>
-      <span class="entry-date">2025</span>
+
+      <span class="entry-date">
+        2026
+      </span>
     </div>
 
     <div class="project-desc">
-      Developed a truck delivery delay prediction system using ensemble machine learning methods
-      including Logistic Regression, Random Forest, XGBoost, LightGBM, and CatBoost.
+      Built a truck delivery delay prediction system using ensemble machine
+      learning models including XGBoost, LightGBM, and CatBoost on logistics
+      operation data. Designed a temporal cross-validation framework to prevent
+      data leakage and improve evaluation reliability. Applied SHAP
+      interpretation, feature ablation analysis, and Optuna-based
+      hyperparameter optimisation within a modular Python pipeline.
     </div>
-
-    <ul>
-      <li>
-        Built a complete machine learning pipeline for logistics delay prediction using Python,
-        scikit-learn, XGBoost, LightGBM, CatBoost, and Optuna.
-      </li>
-
-      <li>
-        Designed a temporal cross-validation framework with TimeSeriesSplit to prevent temporal leakage
-        and improve real-world evaluation reliability.
-      </li>
-
-      <li>
-        Implemented two-stage hyperparameter tuning using RandomizedSearchCV, GridSearchCV,
-        and Optuna TPE optimization with pruning strategies.
-      </li>
-
-      <li>
-        Conducted SHAP-based model interpretation and feature ablation analysis to evaluate
-        feature importance and model explainability.
-      </li>
-
-      <li>
-        Engineered logistics features including transportation distance, vehicle type,
-        origin/destination regions, delivery windows, and temporal variables.
-      </li>
-
-      <li>
-        Structured the project using modular Python packages covering data cleaning,
-        feature engineering, model training, evaluation, tuning, and explainability analysis.
-      </li>
-
-      <li>
-        Achieved reproducible experimentation through configurable pipelines,
-        bootstrap confidence intervals, and automated analysis workflows.
-      </li>
-    </ul>
   </div>
 
   <h2>Activities</h2>
 
   <div class="entry">
     <div class="entry-header">
-      <span class="entry-title">Logistics Solution Design — Course Project</span>
-      <span class="entry-date">2025</span>
+      <span class="entry-title">
+        Logistics Solution Design — Course Project
+      </span>
+
+      <span class="entry-date">
+        2025
+      </span>
     </div>
 
     <ul>
@@ -198,7 +201,6 @@
 
       <li>
         Solved a facility location problem across five regions
-        (Northwest, Southwest, Central, North, and South China)
         and formulated a production scheduling model using PuLP in Python.
       </li>
     </ul>
@@ -206,8 +208,13 @@
 
   <div class="entry">
     <div class="entry-header">
-      <span class="entry-title">Supply Chain Modeling Competition</span>
-      <span class="entry-date">2024</span>
+      <span class="entry-title">
+        Supply Chain Modeling Competition
+      </span>
+
+      <span class="entry-date">
+        2024
+      </span>
     </div>
 
     <div class="entry-sub">
@@ -231,8 +238,13 @@
 
   <div class="entry">
     <div class="entry-header">
-      <span class="entry-title">KOSTAL — Shanghai</span>
-      <span class="entry-date">Summers, 2023 – 2025</span>
+      <span class="entry-title">
+        KOSTAL — Shanghai
+      </span>
+
+      <span class="entry-date">
+        Summers, 2023 – 2025
+      </span>
     </div>
 
     <div class="entry-sub">
@@ -242,22 +254,17 @@
     <ul>
       <li>
         Adjusted daily and weekly production plans in response to
-        real-time line status, material supply fluctuations,
-        and urgent order insertions.
+        production status, material fluctuations, and urgent orders.
       </li>
 
       <li>
-        Applied ABC classification to categorise inventory
-        and prioritise resource allocation toward high-value items.
+        Applied ABC classification to prioritise inventory management
+        and resource allocation.
       </li>
 
       <li>
-        Gained hands-on experience with WMS in daily warehouse operations.
-      </li>
-
-      <li>
-        Coordinated with suppliers and cross-functional teams
-        to support stable material supply.
+        Gained hands-on experience with WMS in warehouse operations
+        and coordinated with suppliers to support material supply.
       </li>
     </ul>
   </div>
@@ -266,20 +273,22 @@
 
   <ul>
     <li>
-      Python — pandas, scikit-learn, XGBoost, LightGBM, CatBoost,
-      Optuna, SHAP
+      Machine Learning — scikit-learn, XGBoost, LightGBM,
+      CatBoost, Optuna, SHAP
     </li>
 
     <li>
-      Operations Research — Gurobi, OR-Tools, PuLP, Linear Programming
+      Programming — Python, pandas, NumPy, Jupyter Notebook
     </li>
 
     <li>
-      Data Analysis & Visualisation — NumPy, Matplotlib, Jupyter Notebook
+      Operations Research — Gurobi, OR-Tools, PuLP,
+      Linear Programming
     </li>
 
     <li>
-      Supply Chain Systems — WMS, Production Planning, Inventory Analysis
+      Supply Chain Systems — WMS, Production Planning,
+      Inventory Analysis
     </li>
 
     <li>
